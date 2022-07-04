@@ -1,11 +1,13 @@
 var startButton = document.querySelector("#start")
-var heading = document.querySelector("#intro")
-var question = document.querySelector("#introP")
+var questions = document.querySelector("#intro")
+var answers = document.querySelector("#introP")
 
-var questions = []
+var questionsArr = []
+var answersArr = []
 
 startButton.addEventListener("click",function() {
-    heading.textContent = ""
-    question.textContent = ""
-    startButton.style.display = none
+    questions.textContent = ""
+    answers.textContent = ""
+    startButton.setAttribute("style","display:none")
 })
+

@@ -16,3 +16,11 @@ body{
     text-align: justify;
     padding: 1rem;
 }
+
+button{
+    /* visibility: hidden; */
+    background-color: #610F7F;
+    color: #fff;
+    padding: 6px;
+    border-radius: 15px;
+}
