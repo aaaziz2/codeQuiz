@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Highscores</title>
 </head>
 <body>
@@ -12,7 +14,16 @@
     </header>
     <main>
         <h3>Please Enter Your Name</h3>
-        <form>Name</form>
+        <form id="hs-form">
+            <input type="text" id="hs-input" placeholder="Enter your name!">
+            <button>Submit</button>
+        </form>
+        <ul></ul>
+
     </main>
+    <footer>
+        <button id="back">Back to Quiz</button>
+    </footer>
 </body>
+<script src="assets/js/highscores.js"></script>
 </html>
