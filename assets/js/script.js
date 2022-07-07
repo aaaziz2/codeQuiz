@@ -94,21 +94,3 @@ function generateQuestion(){
     // Increment counter so it will load the next 4 choices when the function is run again
     choiceCounter+=4
 }
-
-
-// PseudoCode for Quiz Game
-
-// Start page will have explanation of the game ...Done!
-// Pressing the Start button will load questions
-    // Easiest way is for H1 to host questions
-    // How to randomize questions without Duplicates?
-    // lets google/ I don't think I need to
-// Timer starts on start button being pressed ...Done!
-// A question will be generated 
-// A set of 4 choices will be loaded 
-// (Their placement in the list will be random)
-// Only one correct answer in the 4 choices
-// When you select an answer the next one is loaded until the timer hits 0
-// If you get a correct answer that is 
-// If you get a wrong answer you are penalized 10 seconds on the clock
-// Once the clock hits 0 the highscore page is loaded for you to enter your name in to the scoreboard ...Done!

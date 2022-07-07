@@ -9,6 +9,7 @@ function addScore(event){
     // https://www.javascripttutorial.net/web-apis/javascript-localstorage/
     // get list of names from localStorage
     let keys = Object.keys(localStorage)
+    
     //make sure the screen doesn't refresh on submit
     event.preventDefault()
 
@@ -40,7 +41,6 @@ function addScore(event){
         newScore.textContent = `${keys[i]} got a ${localStorage.getItem(keys[i])}`
         leaderboard.appendChild(newScore)
     }
-
 }
 
 // When form submits add user to Highscores
