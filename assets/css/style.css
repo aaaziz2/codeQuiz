@@ -6,6 +6,11 @@ h1{
     font-size:  3rem;
 }
 
+h3{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
 header{
     text-align: center;
     padding: 1rem;
@@ -17,10 +22,23 @@ body{
     padding: 1rem;
 }
 
+input{
+    padding: 6px;
+}
+
 button{
     /* visibility: hidden; */
     background-color: #610F7F;
     color: #fff;
     padding: 6px;
     border-radius: 15px;
+}
+
+#back{
+    background-color: #9C528B;
+}
+
+main, footer{
+    text-align: center;
+    padding: 1rem;
 }

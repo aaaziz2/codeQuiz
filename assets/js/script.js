@@ -13,16 +13,18 @@ var answersArr = ["CSS","JavaScript","PHP","Swift",
                 "Cascading Style Sheets","Colorful Style Sheets","Castiron Steel Stock","Computer Style Sheets",
                 "In the <head>","In the <body>","At the end of document","Right After DOCTYPE",
                 "Ans 1","Ans 2","Ans 3","Ans 4"]
-var timer = 75
+var timer = 40
 var correct = 0
 var current = 0
 var choiceCounter = 0
 
+// create the timer
 var timerShow = document.createElement("p")
 timerShow.textContent = timer
 
 
-
+// start button gets rid of intro page material and starts generating questions
+// resets the counter so you can play again and get different scores
 startButton.addEventListener("click",function() {
     
     skip.textContent = ""
@@ -36,7 +38,7 @@ startButton.addEventListener("click",function() {
     startTimer()
 })
 
-
+// Timer function will automatically load highscore page when it runs out and will record the score directly to localStorage
 function startTimer(){
     var timerInterval = setInterval(function(){
         timer--
@@ -51,6 +53,7 @@ function startTimer(){
     },1000)
 }
 
+// Checks user selection to see if the answer is correct, if not it will take time off the clock
 choices.addEventListener("click",function(event){
     var selection = event.target
     var ans = selection.getAttribute("data-id")
@@ -64,6 +67,9 @@ choices.addEventListener("click",function(event){
     generateQuestion()
 })
 
+// Stores the score into localStorage, when you run out of questions it will load the highscores page
+// Generates the questions and answers from the corresponding arrays and adds them to the page
+// I want to implement a way to randomize the order of choices but haven't gotten to that yet
 function generateQuestion(){
     localStorage.setItem("score",correct)
     if(!questionsArr[current]){
