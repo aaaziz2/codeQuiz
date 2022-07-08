@@ -34,13 +34,12 @@ startButton.addEventListener("click",function() {
     choiceCounter = 0
     
     generateQuestion()
-    // choices.children[0].setAttribute("style","display:inline")
-    // choices.children[0].setAttribute("style","display:inline")
-    // choices.children[0].setAttribute("style","display:inline")
-    // choices.children[0].setAttribute("style","display:inline")
     
+    questions.setAttribute("style","font-size:2rem")
+
     // Add timer to the screen
     document.body.children[0].appendChild(timerShow)
+    // timerShow.setAttribute("style","font-size:20px, color:red, padding:1rem")
     startTimer()
 })
 
