@@ -11,6 +11,18 @@ h3{
     padding-bottom: 10px;
 }
 
+p{
+    font-size: 18px;
+    padding: 5px;
+}
+
+#choices li{
+    display: none;
+    border: #610F7F solid 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
 header{
     text-align: center;
     padding: 1rem;
@@ -36,6 +48,12 @@ button{
 
 #back{
     background-color: #9C528B;
+}
+
+#leaderboard li{
+    /* border: #610F7F solid 2px; */
+    padding: 5px;
+    margin: 5px;
 }
 
 main, footer{

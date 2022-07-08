@@ -22,10 +22,13 @@ THEN I can save my initials and my score
 
 ## Screenshots
 
+![Welcome Screen](./assets/images/welcome.png)
 
+![Question](./assets/images/question.png)
 
+![Enter your high score](./assets/images/highscores.png)
 ## Links
 
-Github:
+Github: https://github.com/aaaziz2/codeQuiz
 
-Direct Link:
+Direct Link: https://aaaziz2.github.io/codeQuiz/

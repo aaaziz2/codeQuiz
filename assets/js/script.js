@@ -34,6 +34,10 @@ startButton.addEventListener("click",function() {
     choiceCounter = 0
     
     generateQuestion()
+    // choices.children[0].setAttribute("style","display:inline")
+    // choices.children[0].setAttribute("style","display:inline")
+    // choices.children[0].setAttribute("style","display:inline")
+    // choices.children[0].setAttribute("style","display:inline")
     
     // Add timer to the screen
     document.body.children[0].appendChild(timerShow)
@@ -86,7 +90,7 @@ function generateQuestion(){
     
     // Generate the possible choices
     for(var j = 0; j<4; j++){
-
+        choices.children[j].setAttribute("style","display:inline")
         choices.children[j].textContent = answersArr[choiceCounter+j]
         choices.children[j].setAttribute("data-id",choiceCounter+j)
     }
